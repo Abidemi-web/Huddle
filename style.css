@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: wrap;
+
+  
+  
+  
+}
+header {
+  background-image: url(assets/bg-hero-desktop.svg);
+}
+.head {
+  padding: 50px;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
+.head button {
+  width: 10%;
+  height: 5vh;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: -1px 0px 5px 0px rgba(184, 178, 178, 0.75);
+  font-family: 'Open Sans';
+  
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.hero h1 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+  text-wrap: wrap;
+}
+.hero button {
+width: 40%;
+height: 8vh;
+border-radius: 50px;
+border: none;
+background-color:  hsl(322, 100%, 66%);
+color: white;
+font-family: 'Open Sans';
+box-shadow: -1px 0px 20px -5px hsl(322, 100%, 66%);
+cursor: pointer;
+/* white-space: nowrap; 
+   
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.card {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: -1px 0px 5px 0px rgba(184, 178, 178, 0.75);
+  padding: 50px;
+}
+.card h3 {
+  font-size: 30px;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+.card p {
+  text-wrap: wrap;
+  font-size: 20px;
+  color: hsl(208, 11%, 55%);
+  font-family: 'Open Sans';
+}
+.pos {
+  background-color: white;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: -7rem;
+  left: 35%;
+  width: 30%;
+  height: 30vh;
+  text-align: center;
+  
+  box-shadow: -1px 0px 5px 0px rgba(184, 178, 178, 0.75);
+z-index: 1;
+}
+.button {
+  width: 55%;
+  height: 8vh;
+  border-radius: 50px;
+  border: none;
+  margin-top: 10px;
+  background-color:  hsl(322, 100%, 66%);
+  color: white;
+  font-family: 'Open Sans';
+  box-shadow: -1px 0px 20px -5px hsl(322, 100%, 66%);
+  cursor: pointer;
+  }
+  
+footer {
+  position: relative;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 50px;
+  margin-top: 6%;
+  
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-family: 'Poppins';
+}
+.foot p {
+  line-height: 35px;
+}
+
+
+@media (max-width: 768px){
+  header {
+    background-image: url('assets/bg-hero-mobile.svg');
+  }
+  .head {
+    padding: 20px;
+  }
+  .head button{
+    width: 25%;
+  } 
+  .hero {
+    display: block;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 25px;
+  }
+  .hero p {
+    /* font-size: 12px; */
+    
+  }
+  .hero button{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero img {
+    width: 100%;
+    
+  }
+  .card {
+    display: block;
+    text-align: center;
+  }
+  .card h3 {
+    font-size: 20px;
+   
+  }
+  .card p {
+    text-wrap: wrap;
+    font-size: 15px;
+  
+  }
+   .pos {
+    
+    margin-bottom: -8rem;
+    left: 8%;
+    width: 85%;
+    height: 30vh;
+    text-align: center;
+    
+   
+  } 
+  .button {
+    width: 60%;
+    height: 8vh;
+    
+    
+    }
+    
+  footer {
+    
+    padding: 50px;
+    margin-top: 20%;
+    
+  }
+  .foot {
+    display: block;
+    column-gap: 20px;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-family: 'Poppins';
+  }
+  .foot p {
+    line-height: 35px;
+  }
+  .icon {
+    text-align: center;
+  }
+  
+}
+@media (max-width: 375px){
+  .head button{
+    width: 45%;
+    font-size: 12px;
+  } 
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 10px; 
+    font-weight: 500;
+    
+  }
+  .hero button{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero img {
+    width: 100%;
+    
+  }
+  .card {
+    display: block;
+    text-align: center;
+  }
+  .card h3 {
+    font-size: 13px;
+   
+  }
+  .card p {
+    text-wrap: wrap;
+    font-size: 10px;
+  
+  }
+  .pos {
+    
+    margin-bottom: -9rem;
+    left: 8%;
+    width: 85%;
+    height: 30vh;
+    text-align: center;
+    
+   
+  }
+  .pos h3 {
+    font-size: 13px;
+  }
+  .button {
+    width: 80%;
+    height: 8vh;
+    
+    
+    }
+    
+  footer {
+    
+    padding: 50px;
+    margin-top: 40%;
+    
+  }
+  .foot {
+    display: block;
+    column-gap: 20px;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-family: 'Poppins';
+  }
+  .foot p {
+    line-height: 35px;
+    font-size: 12px;
+    text-wrap: wrap;
+  }
+  .copy {
+    font-size: 10px;
+  }
+  footer img {
+    width: 140px;
+  }
+}
